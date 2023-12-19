@@ -57,7 +57,7 @@ for project_id in projects:
 
         new_file_path = f"{dir_name}/(機密等級=一般文件) {base_name}"
         
-        if file_extension.lower() in ['.doc', '.docx', '.ppt', '.pptx', '.xlsx', '.pdf', '.zip', '.7z'] and base_name not in '機密等級':
+        if file_extension.lower() in ['.doc', '.docx', '.ppt', '.pptx', '.xlsx', '.pdf', '.zip', '.7z'] and '機密等級' not in base_name:
 
             try:
 
